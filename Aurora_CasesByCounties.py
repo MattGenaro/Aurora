@@ -3,47 +3,47 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-df = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/us-counties.csv', engine='python')
+df = pd.read_csv('/Assets/us-counties.csv')
 
 df0 = df[(df["county"] == 'Alachua') & (df["state"] == 'Florida')]
 df00 = df0[['date','cases']]
-df00.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/alachuacases.csv', index = False)
+df00.to_csv('/Assets/Cases/alachuacases.csv', index = False)
 
 df1 = df[(df["county"] == 'Broward') & (df["state"] == 'Florida')]
 df01 = df1[['date','cases']]
-df01.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/browardcases.csv', index = False)
+df01.to_csv('/Assets/Cases/browardcases.csv', index = False)
 
 df2 = df[(df["county"] == 'Hillsborough') & (df["state"] == 'Florida')]
 df02 = df2[['date','cases']]
-df02.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/hillsboroughcases.csv', index = False)
+df02.to_csv('/Assets/Cases/hillsboroughcases.csv', index = False)
 
 df3 = df[(df["county"] == 'Leon') & (df["state"] == 'Florida')]
 df03 = df3[['date','cases']]
-df03.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/leoncases.csv', index = False)
+df03.to_csv('/Assets/Cases/leoncases.csv', index = False)
 
 df4 = df[(df["county"] == 'Miami-Dade') & (df["state"] == 'Florida')]
 df04 = df4[['date','cases']]
-df04.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/miamidadecases.csv', index = False)
+df04.to_csv('/Assets/Cases/miamidadecases.csv', index = False)
 
 df6 = df[(df["county"] == 'Monroe') & (df["state"] == 'Florida')]
 df05 = df6[['date','cases']]
-df05.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/monroecases.csv', index = False)
+df05.to_csv('/Assets/Cases/monroecases.csv', index = False)
 
 df7 = df[(df["county"] == 'Orange') & (df["state"] == 'Florida')]
 df06 = df7[['date','cases']]
-df06.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/orangecases.csv', index = False)
+df06.to_csv('/Assets/Cases/orangecases.csv', index = False)
 
 df8 = df[(df["county"] == 'Osceola') & (df["state"] == 'Florida')]
 df07 = df8[['date','cases']]
-df07.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/osceolacases.csv', index = False)
+df07.to_csv('/Assets/Cases/osceolacases.csv', index = False)
 
 df9 = df[(df["county"] == 'Palm Beach') & (df["state"] == 'Florida')]
 df08 = df9[['date','cases']]
-df08.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/palmbeachcases.csv', index = False)
+df08.to_csv('/Assets/Cases/palmbeachcases.csv', index = False)
 
 df10 = df[(df["county"] == 'Pinellas') & (df["state"] == 'Florida')]
 df09 = df10[['date','cases']]
-df09.to_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/pinellascases.csv', index = False)
+df09.to_csv('C/Assets/Cases/pinellascases.csv', index = False)
 
 frames = [df0, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10]
 
@@ -221,9 +221,6 @@ plt.setp(ax.get_xticklabels(), rotation=45)
 
 plt.savefig('pinellascases.png')
 plt.show()
-
-plt.show()
-
 
 
 
